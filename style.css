@@ -20,11 +20,11 @@ html, body {
     margin-top: -100px; 
     margin-left: -100px;
     
-      border-color: orange;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 50%;
-  box-shadow: 0 0 64px yellow;
+    border-color: orange;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    box-shadow: 0 0 100px yellow;
 
 
 }
@@ -36,9 +36,15 @@ html, body {
     left: 50%;
 
     height: 70px;
-    width: 70px;
+    width: 75px;
     margin-left: -25px;
     margin-top: -25px;
+    
+    border-color: blue;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%;
+    box-shadow: 0 0 14px yellow;
 }
 
 #earth-orbit {
@@ -46,8 +52,8 @@ html, body {
     top: 50%;
     left: 60%;
 
-    width: 500px;
-    height: 500px;
+    width: 540px;
+    height: 700px;
     margin-top: -250px;
     margin-left: -380px;
 
@@ -69,12 +75,12 @@ html, body {
     /* Style your earth */
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 0;
 
     height: 20px;
-    width: 21px;
-    margin-left: -35px;
-    margin-top: -35px;
+    width: 22px;
+    margin-left: -38px;
+    margin-top: -30px;
     
 }
 
@@ -83,9 +89,9 @@ html, body {
     top: 50%;
     left: 50%;
 
-    width: 50px;
-    height: 53px;
-    margin-top: -270px;
+    width: 65px;
+    height: 75px;
+    margin-top: -380px;
     margin-left: -30px;
 
     border-width: 1px;
@@ -93,11 +99,11 @@ html, body {
     border-color: white;
     border-radius: 50%;
 
-  -webkit-animation: spin-right 1s linear infinite;
-     -moz-animation: spin-right 1s linear infinite;
-      -ms-animation: spin-right 1s linear infinite;
-       -o-animation: spin-right 1s linear infinite;
-          animation: spin-right 1s linear infinite;
+  -webkit-animation: spin-left 1s linear infinite;
+     -moz-animation: spin-left 1s linear infinite;
+      -ms-animation: spin-left 1s linear infinite;
+       -o-animation: spin-left 1s linear infinite;
+          animation: spin-left 1s linear infinite;
 
 }
 
@@ -118,5 +124,25 @@ html, body {
         -ms-transform: rotate(360deg);
          -o-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+       -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+         -o-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+       -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+         -o-transform: rotate(-360deg);
+            transform: rotate(-360deg);
   }
 }
